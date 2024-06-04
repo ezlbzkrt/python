@@ -1,0 +1,12 @@
+import random
+random.random()
+random.randint(2,19) #2 ile 19 arasında rastgele integer bir değer verir.
+random.randrange(1,13,2) #1 ile 13 arasında 2'şerli atlayarak değer üretecek.
+random.uniform(10,11) #10 ile 11 arasında sayı yazar.
+random.choice(['2','e','b','21','25','p']) #tanımlanan listeden rastgele bir değer söyler
+Liste=["ezel","hakan","çağatay","kıvanç","ekin"]
+random.choice(Liste) #Listeden random seçer çekiliş gibi.
+random.shuffle(Liste)
+print(Liste) #Listeyi karar ve yazdırmak gerekir.
+random.sample(Liste,2) #Listeden rastgele 2 eleman seçer.
+
