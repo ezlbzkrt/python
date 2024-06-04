@@ -1,0 +1,56 @@
+from math import pi
+
+# SINIFLARIM
+
+# küp sınıfı içerisinde bir metot tanımladık.
+class kup:
+    def __init__(self, a):        
+        self.a = a
+
+    # Yüzey alanı hesabı 
+    def yAlan(self):
+        return ("yüzey alanı..:", 6 * pow(self.a, 2), "cm^2")    
+
+    def hacim(self):
+        return ("hacim..:", pow(self.a, 3), "cm^3")
+
+class kure:
+    def __init__(self, r):
+        self.r = r
+
+    def yAlan(self):
+        return ("yuzey alanı..:", 4 * pi * pow(self.r, 2), "cm^2")      
+  
+    def hacim(self):
+        return ("hacim..:", (4/3) * pi * pow(self.r, 3), "cm^3")
+
+# yarıçap ve yükseklik değişkenlerini tanımladık    
+class silindir:
+    def __init__(self, r, h): 
+        self.r = r
+        self.h = h
+
+    # ( (2 * pi * pow(r, 2)) + (2 * pi * r * h) )
+    def yAlan(self):
+        return ("yüzey alanı..:", 2 * pi * self.r * (self.r + self.h), "cm^2 ' dir.")     
+
+    def hacim(self):
+        return ("hacim..:", pi * pow(self.r, 2) * self.h, "cm^3'dür")  
+
+# NESNELERİM
+
+futbolTopu = kure(10)
+pinponTopu = kure(3)
+pilatesTopu = kure(25)
+bilye = kure(1.5)  
+boncuk = kure(0.3)  
+
+rubikKup=kup(10)
+kupSeker=kup(2)
+koli=kup(50)
+
+merdane=silindir(3, 30)
+tencere=silindir(15, 20)
+petSise=silindir(5, 17)
+kalemlik=silindir(7, 12)
+
